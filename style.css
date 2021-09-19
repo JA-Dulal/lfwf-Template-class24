@@ -65,7 +65,34 @@ body .btn-light:hover::after{
 }
 
 
+/*=====drowp-dowen===========*/
+.menunn ul li{
+    position: relative;
+}
+.drowp{
+        height: 60px;
+        width: 140px;
+        background-color: #2146b4;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        border: 11px solid #fff;
+        color: #fff;
+        visibility: hidden;
+        opacity: 0;
+        transition: .4s;
+}
 
+
+.drowp p{
+    margin-top: 10px;
+}
+
+.menunn ul li:hover .drowp{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -10px;
+}
 
 /*================back-rounded-sec=================================*/
 
@@ -74,6 +101,7 @@ body .btn-light:hover::after{
 .about-section{
     position: relative;
     overflow: hidden;
+    height: 85vh;
 }
 
 
@@ -116,6 +144,17 @@ color: #2146b4;
     visibility: visible;
 }
 
+.fixsdd::after{
+    content: "";
+    bottom: 0;
+    top: 159%;
+    left: 6px;
+    position: absolute;
+    width: 100%;
+    height: 4%;
+    background-color: #3063fa;
+}
+
 .menu-ver ul li a{
     color: #fff;
     text-decoration: none;
@@ -147,11 +186,15 @@ color: #2146b4;
     
 }
 
-.image-tagn img{
-    margin-top: -78px;
-    margin-left: 137px;
-}
 
+
+.image-tagn img {
+    position: absolute;
+    height: 700px;
+    width: 700px;
+    top: -174px;
+    right: -175px;
+}
 
 
 
@@ -174,7 +217,7 @@ color: #2146b4;
     background-color: #f3f8fb;
 }
 .text-taggggggg{
-    margin-top: 70px;
+    margin-top: 30%;
     align-items: center;
 }
 .undre{
@@ -374,29 +417,3 @@ color: #ffffff;
     margin-top: 50px;
 }
 
-
-
-
-
-
-
-
-
-/* 
-.iconnn i{
-    position: relative;
-    z-index: 1;
-}
-.iconnn i::before{
-    contain: "";
-    width: 80px;
-    height: 80px;
-    background-color: rgb(236, 113, 113);
-    position: absolute;
-    top: 0;
-    left: 0;
-    
-    z-index: -1;
-    border-radius: 50%;
-
-} */
